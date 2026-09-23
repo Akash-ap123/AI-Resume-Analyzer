@@ -14,7 +14,7 @@ function JobDescription() {
       setMessage("Processing job description...");
 
       const response = await fetch(
-        "http://localhost:5000/api/resume/job-description",
+        "https://ai-resume-analyzer-backend-xin2.onrender.com/api/resume/job-description",
         {
           method: "POST",
           headers: {

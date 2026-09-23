@@ -11,7 +11,7 @@ function AnalyzeButton() {
       setMessage("Running AI analysis...");
 
       const response = await fetch(
-        "http://localhost:5000/api/resume/analyze",
+        "https://ai-resume-analyzer-backend-xin2.onrender.com/api/resume/analyze",
         {
           method: "POST",
         }

@@ -26,7 +26,7 @@ function ResumeUpload() {
       setMessage("Uploading resume...");
 
       const response = await fetch(
-        "http://localhost:5000/api/resume/upload",
+        "https://ai-resume-analyzer-backend-xin2.onrender.com/api/resume/upload",
         {
           method: "POST",
           body: formData,
