@@ -8,11 +8,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/resume", resumeRoutes);
-
 app.get("/", (req, res) => {
   res.send("AI Resume Analyzer Backend is running");
 });
+
+app.use("/api/resume", resumeRoutes);
 
 const PORT = process.env.PORT || 5000;
 
